@@ -20,10 +20,10 @@ public class Main {
                     unitsArray[nextUnit] = new Unit("Guard",4,4,3,3,1,1,5);
                     nextUnit++;
                     unitsArray[nextUnit] = new Unit("Space Marine",3,3,4,4,2,2,3);
-                    for (int i = 0; i < unitsArray.length; i++) {
-                        System.out.println(unitsArray[i].toString());
+                    for (Unit unit : unitsArray) {
+                        System.out.println(unit.toString());
                     }
-                    
+
                 }
                 case 2 -> {
                     weaponsArray[nextWeapon] = new Weapon("Lasgun","ranged",3,1,1,0);
@@ -31,8 +31,8 @@ public class Main {
                     weaponsArray[nextWeapon] = new Weapon("Bolter","ranged",4,1,2,1);
                     nextWeapon++;
                     weaponsArray[nextWeapon] = new Weapon("Plasma gun","ranged",8,2,2,3);
-                    for (int i = 0; i < weaponsArray.length; i++) {
-                        System.out.println(weaponsArray[i].toString());
+                    for (Weapon weapon : weaponsArray) {
+                        System.out.println(weapon.toString());
                     }
                 }
                 case 3 -> Calc.ranged(10,unitsArray[0],weaponsArray[0],unitsArray[1]);
