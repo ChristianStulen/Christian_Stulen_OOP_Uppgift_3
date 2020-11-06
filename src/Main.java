@@ -22,7 +22,7 @@ public class Main {
                         "\n2: Add weapons" +
                         "\n3: Calculate probability" +
                         "\n4: Exit"));
-                if (input>4) errorMessage("Please typ an integer, 1-4");
+                if (input>4 || input<=0) errorMessage("Please typ an integer, 1-4");
             }catch (Exception e1) {
                 input=0;
                 errorMessage("Please typ an integer, 1-4");
@@ -111,6 +111,7 @@ public class Main {
 
             }
         }
+
     }
     static void errorMessage(String message){
         JOptionPane.showMessageDialog(null,message);
