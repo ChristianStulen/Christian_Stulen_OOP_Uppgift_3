@@ -1,3 +1,10 @@
+/**
+ * Unit represents an unit in the game Warhammer 40k. They have several different stats
+ * that's used together with dice to get results.
+ * When a Unit has been created it becomes immutable and cannot be changed.
+ * @author Christian Stulen
+ */
+
 public class Unit {
     private final String name;
     private final int weaponSkill;
@@ -8,6 +15,32 @@ public class Unit {
     private final int attack;
     private final int armorSave;
 
+    /**
+     * Constructor for Unit.
+     * @param n -Name
+     * @param ws -Weapon skill
+     * @param bs -Ballistic skill
+     * @param s -Strength
+     * @param t -Toughness
+     * @param w -Wound
+     * @param a -Attack
+     * @param as -Armor Save
+     */
+    public Unit(String n, int ws, int bs, int s, int t, int w, int a, int as){
+        name=n;
+        weaponSkill=ws;
+        ballisticSkill=bs;
+        strength=s;
+        toughness=t;
+        wound=w;
+        attack=a;
+        armorSave=as;
+    }
+
+    /**
+     * Several getters so that the values of the unit can be used
+     * in calculations.
+     */
     public String getName() {
         return name;
     }
@@ -40,17 +73,9 @@ public class Unit {
         return armorSave;
     }
 
-    public Unit(String n, int ws, int bs, int s, int t, int w, int a, int as){
-        name=n;
-        weaponSkill=ws;
-        ballisticSkill=bs;
-        strength=s;
-        toughness=t;
-        wound=w;
-        attack=a;
-        armorSave=as;
-
-    }
+    /**
+     * toString that layout the different values in a understandable way.
+     */
 
     public String toString() {
 

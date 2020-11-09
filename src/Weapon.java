@@ -1,3 +1,8 @@
+/**
+ * Weapon represents an item that Units can wield to improve their damage potential.
+ * When a Weapon has been created it becomes immutable and cannot be changed.
+ * @author Christian Stulen
+ */
 public class Weapon {
     private final String name;
     private final String meleeOrRanged;
@@ -6,6 +11,15 @@ public class Weapon {
     private final int attack;
     private final int armorPenetration;
 
+    /**
+     * Constructor for Weapon
+     * @param n -Name
+     * @param mr -Melee or Ranged
+     * @param s -Strength
+     * @param d -Damage
+     * @param a -Attacks
+     * @param ap -Armor Penetration
+     */
     public Weapon(String n, String mr, int s, int d, int a, int ap) {
          name = n;
          meleeOrRanged = mr;
@@ -15,6 +29,10 @@ public class Weapon {
          armorPenetration = ap;
     }
 
+    /**
+     * Several getters so that the values of the weapon can be used
+     * in calculations.
+     */
     public String getName() {
         return name;
     }
@@ -39,6 +57,9 @@ public class Weapon {
         return armorPenetration;
     }
 
+    /**
+     * toString that layout the different values in a understandable way.
+     */
     public String toString() {
        return "[" + name + " Type:" + meleeOrRanged + " S:" + strength + " D:" + damage + " A:" + attack + " AP:-" + armorPenetration + "]";
 
