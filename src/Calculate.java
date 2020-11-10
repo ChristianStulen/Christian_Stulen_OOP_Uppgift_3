@@ -1,5 +1,3 @@
-
-
 import javax.swing.*;
 /**
  * Calculate does exactly that, it calculates the probability of the data send to it.
@@ -79,7 +77,8 @@ public class Calculate {
      * How good the armor protects it's wielder depends on the armor penetration of the weapon.
      * If the AP is greater then the armor then the armor will not help at all.
      * @param attacker - Attackers Armor-Penetration
-     * @param defender - Defenders armor
+     * @param defender - Defenders
+     *                armor
      * @return -Returns how much of the armor is still functional.
      */
     public static int totalArmorSave(int attacker, int defender){
