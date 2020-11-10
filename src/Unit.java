@@ -37,10 +37,7 @@ public class Unit {
         armorSave=as;
     }
 
-    /**
-     * Several getters so that the values of the unit can be used
-     * in calculations.
-     */
+
     public String getName() {
         return name;
     }
@@ -74,7 +71,7 @@ public class Unit {
     }
 
     /**
-     * toString that layout the different values in a understandable way.
+     * toString that lay out the different values in a understandable way.
      */
 
     public String toString() {

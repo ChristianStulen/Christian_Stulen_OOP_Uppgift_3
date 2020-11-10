@@ -8,7 +8,7 @@ import javax.swing.*;
  */
 public class HowMuchDamage {
     /**
-     * A menu loop is used so that the user can run the calculations any number of times.
+     * Contains a menu loop that's used so that the user can run the calculations any number of times.
      * In the menu the user can add weapons and units so that calculations can be run.
      */
     public static void main(String[] args) {
@@ -135,7 +135,7 @@ public class HowMuchDamage {
                     else if (choice==1) isRanged=false;
                     else break;
 
-                    Calculate.ranged(nrOfAttackers, unitsArray[attacker], weaponsArray[weaponChoice], unitsArray[defender],isRanged);
+                    Calculate.calculation(nrOfAttackers, unitsArray[attacker], weaponsArray[weaponChoice], unitsArray[defender],isRanged);
                     }
                     catch (Exception e3){
                         errorMessage("Please type an integer.");

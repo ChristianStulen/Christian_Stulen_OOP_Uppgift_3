@@ -3,14 +3,14 @@
 import javax.swing.*;
 /**
  * Calculate does exactly that, it calculates the probability of the data send to it.
- * It works by first checking how many of the attacks will hit. Then they check if the hits would cause a wound or
+ * It works by first checking how many of the attacks will hit. Then it checks if the hits would cause a wound or
  * just glance of. Lastly it check if the defenders armor would protect them from the wound.
- * Then the program displays the result.
+ * Afterward the program displays the result.
  * @author Christian Stulen
  */
 public class Calculate {
     /**
-     * Checks if the attack is ranged or melee. Then it runs the calculations according to the type of attack
+     * Runs the calculations according to the type of attack
      * and then display the result.
      * Several temporary variables are used:
      * @param nrOfAttacker - How many attackers are there
@@ -19,7 +19,7 @@ public class Calculate {
      * @param defender - Defenders stats
      * @param isRanged - If it's a ranged attack or melee. Different values are used in melee.
      */
-    public static void ranged(int nrOfAttacker, Unit attacker, Weapon weapon, Unit defender,boolean isRanged) {
+    public static void calculation(int nrOfAttacker, Unit attacker, Weapon weapon, Unit defender, boolean isRanged) {
     double hits;
     double wounds;
     double damage;

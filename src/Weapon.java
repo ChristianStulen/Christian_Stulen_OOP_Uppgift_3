@@ -29,10 +29,6 @@ public class Weapon {
          armorPenetration = ap;
     }
 
-    /**
-     * Several getters so that the values of the weapon can be used
-     * in calculations.
-     */
     public String getName() {
         return name;
     }
@@ -58,7 +54,7 @@ public class Weapon {
     }
 
     /**
-     * toString that layout the different values in a understandable way.
+     * toString that lay out the different values in a understandable way.
      */
     public String toString() {
        return "[" + name + " Type:" + meleeOrRanged + " S:" + strength + " D:" + damage + " A:" + attack + " AP:-" + armorPenetration + "]";
